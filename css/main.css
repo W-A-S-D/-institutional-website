@@ -37,7 +37,7 @@ ul {
     left: 0;
     box-sizing     : border-box;
     height         : 80px;
-    padding        : 3rem 2.5rem 3rem 2.5rem;
+    padding        : 3rem 2.5rem 3rem 5rem;
     display        : flex;
     align-items    : center;
     justify-content: space-between;
