@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body,
+ul {
+    margin     : 0;
+    padding    : 0;
+    font-family: 'Righteous';
+}
+
+.header {
+    box-sizing     : border-box;
+    height         : 80px;
+    padding        : 3rem 5rem 3rem 5rem;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    border-bottom  : 1px solid #FCDDEC;
+    background     : #000000;
+}
+
+label {
+    color: #FFF;
+}
+
+.logo {
+    font-size     : 2.1rem;
+    letter-spacing: .12rem;
+}
+
+#menu {
+    display   : flex;
+    list-style: none;
+    gap       : 0.6rem;
+    font-size : 1.2rem;
+}
+
+.sign-button a {
+    background   : linear-gradient(90deg, #A29BFE 0%, #7FB8C4 100%);
+    border-radius: 6px;
+    padding      : 3px 8px 3px 8px;
+}
+
+.sign-button a:hover {
+    border: none
+}
+
+a {
+    color          : rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 3px solid #A29BFE;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    #menu {
+        display   : block;
+        position  : absolute;
+        width     : 100%;
+        top       : 97px;
+        right     : 0px;
+        background: #000000;
+        transition: 0.6s;
+        z-index   : 1000;
+        height    : 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #navbar.active #menu {
+        height    : calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        width: 100%;
+        padding      : 1rem 0;
+        margin       : 0 3rem;
+        border-bottom: 2px solid rgba(209, 209, 209, 0.568);
+    }
+
+    #menu li {
+        padding-top: 45px;
+    }
+
+    #btn-mobile {
+        display   : flex;
+        padding   : 0.5rem 1rem;
+        font-size : 1rem;
+        border    : none;
+        background: none;
+        cursor    : pointer;
+        gap       : 0.5rem;
+    }
+
+    #hamburger {
+        color: #FFF;
+        border-top: 3px solid;
+        width     : 20px;
+    }
+
+    #hamburger::after, #hamburger::before {
+        content   : '';
+        display   : block;
+        width     : 20px;
+        height    : 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position  : relative;
+    }
+
+    #navbar.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #navbar.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #navbar.active #hamburger::after {
+        transform: rotate(-135deg);
+        top      : -7px;
+    }
+}
