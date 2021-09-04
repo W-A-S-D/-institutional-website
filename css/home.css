@@ -10,23 +10,40 @@
 
 .home-panel .slogan-title  {
     color: white;
-    font-size: 6rem;
+    font-size: 4.5rem;
+    font-family: var(--Noto-Sans);
+    text-transform: uppercase;
 
 }
 
 .slogan-container {
-    margin-top: 80px;
+    position: relative;
+    z-index: 1;
     display: flex;
+    margin-top: 80px;
     flex-direction: row;
     align-items: center;
+    padding-left: 100px;
     width: 95%;
-    height: 75vh;
+    height: 100vh;
     overflow: hidden;
     box-sizing: border-box;
 }
 
+.controller-img {
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
 
 .slogan-container .controller-img img {
-    width: 742px;
-    height: 494px;
+    width: 600px;
+    height: 350px;
+}
+
+.purple-highlight {
+    color: var(--default-purple);
 }

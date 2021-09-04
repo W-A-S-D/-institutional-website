@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
     --default-green: #7fb8c4;
     --default-purple: #a29bfe;
     --dark-gray: #2d3436;
     --light-green: #81ecec;
+    --Noto-Sans: 'Noto Sans', sans-serif;
 }
 
 
