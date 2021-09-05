@@ -22,7 +22,7 @@
 }
 
 .about-message2{
-    padding-top: 4.5%;
+    padding-top: 8.5%;
     padding-left: 3%;
     width: 58%;
     font-family: Noto Sans;
@@ -33,18 +33,13 @@
     color: #8E73DF;
 }
 .ballsHolder{
-    height: 23vh;
+    padding-top: 5%;
     width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 .balls{
-    width: 15%; 
-    background: #FFFFFF;
-    box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 100% 100% 100% 100%;
-
     display: flex;
     justify-content: center;
     align-content: center;
@@ -52,6 +47,8 @@
 
 .icon-about{
     width: 50%;
+    box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 100% 100% 100% 100%;
 }
 
 @media screen and (max-width:500px) {
