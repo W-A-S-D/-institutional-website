@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.about-container{
+    position:   absolute;
+    width:      95%;
+    height:     75vh;
+    padding-left: 40px;
+    background: #FFFFFF;
+}
+.about-message1{
+    padding-top: 3rem;
+    padding-left: 2.5rem;
+    width: 427px;
+    height: 107px;
+    
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+    
+    color: #7FB8C4;
+}
+
+.about-message2{
+    padding-top: 3rem;
+    padding-left: 2.5rem;
+    width: 1036px;
+    height: 245px;
+    
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+    
+    color: #7FB8C4;
+}
+.ballsHolder{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: space-around;
+}
+.balls{
+    height: 314px;
+    width: 314px;
+    left: -936px;
+    top: 724px;
+    border-radius: 100% 100% 100% 100%;
+
+    box-shadow: 0px 0px 22px 10px #00000026;
+
+    width: 314px;
+    height: 314px;
+
+    background: #ffffff;
+    box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
