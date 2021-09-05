@@ -2,63 +2,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .about-container{
-    position:   absolute;
-    width:      95%;
-    height:     75vh;
-    padding-left: 40px;
+    height:     65%;
+    padding-left: 2rem;
     background: #FFFFFF;
 }
 .about-message1{
-    padding-top: 3rem;
-    padding-left: 2.5rem;
-    width: 427px;
-    height: 107px;
+    padding-top: 4.5%;
+    padding-left: 3%;
+    width: 34vw;
+    height: 4vw;
     
     font-family: Righteous;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 45px;
+    font-size: 2.5vw;
     
-    color: #7FB8C4;
+    color: #8E73DF;
+    white-space: nowrap; /* não deixa a palavra quebrar linha*/
 }
 
 .about-message2{
-    padding-top: 3rem;
-    padding-left: 2.5rem;
-    width: 1036px;
-    height: 245px;
-    
-    font-family: Righteous;
+    padding-top: 4.5%;
+    padding-left: 3%;
+    width: 58%;
+    font-family: Noto Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 49px;
+    font-size: 2.5vw;
     
-    color: #7FB8C4;
+    color: #8E73DF;
 }
 .ballsHolder{
+    height: 23vh;
+    width: 95%;
     display: flex;
     flex-direction: row;
-    width: 95%;
     justify-content: space-around;
 }
 .balls{
-    height: 314px;
-    width: 314px;
-    left: -936px;
-    top: 724px;
+    width: 15%; 
+    background: #FFFFFF;
+    box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.15);
     border-radius: 100% 100% 100% 100%;
 
-    box-shadow: 0px 0px 22px 10px #00000026;
-
-    width: 314px;
-    height: 314px;
-
-    background: #ffffff;
-    box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.15);
-
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-content: center;
+}
+
+.icon-about{
+    width: 50%;
+}
+
+@media screen and (max-width:500px) {
+    .about-message1{
+        font-size: 13px;
+        word-break: keep-all;
+    }
+
+    .about-message2{
+        word-break: keep-all;
+        padding-top: 6%;
+        font-size: 13px;
+    }
 }
