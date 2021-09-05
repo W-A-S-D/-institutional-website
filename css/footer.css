@@ -1,8 +1,7 @@
 footer{
     background: #2d3436;
     color: #FFF;
-    position: absolute;
-	bottom: 0;
+    position: sticky;
     width: 100%;
     height: 45vh;
     display: flex;
@@ -28,7 +27,7 @@ footer{
     border-right: 2px solid white;
     padding: 0 20px;
     border-left: 2px solid white;
-    margin: 0 80px 0 80px;
+    margin: 0  50px 0 150px;
 }
 .textfooter{
     word-break: break-all;
@@ -37,3 +36,26 @@ footer{
 .footerSection ul{
     list-style: none;
 }
+.footerSection h3{
+    margin-bottom: 5%;
+}
+.footerSection p{
+    margin-bottom: 5%;
+}
+h3{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+.footerweb {
+    padding-left: 40%;
+}
+.footerweb img {
+    margin-left: 4%;
+    width: 20%;
+}
+.footerSection p{
+    word-break: break-all;
+}
+
