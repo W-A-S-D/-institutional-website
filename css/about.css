@@ -2,64 +2,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .about-container{
-    height:     65%;
+    height:     auto;
     padding-left: 2rem;
     background: #FFFFFF;
 }
 .about-message1{
-    padding-top: 4.5%;
-    padding-left: 3%;
-    width: 34vw;
-    height: 4vw;
-    
+    margin-top: 7.5%;
+    margin-left: 40px;
     font-family: Righteous;
     font-style: normal;
     font-weight: normal;
-    font-size: 2.5vw;
-    
+    font-size: 2.5rem;
     color: #8E73DF;
-    white-space: nowrap; /* não deixa a palavra quebrar linha*/
 }
 
 .about-message2{
-    padding-top: 8.5%;
-    padding-left: 3%;
-    width: 58%;
-    font-family: Noto Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2.5vw;
-    
-    color: #8E73DF;
+    padding-top:    3rem;
+    margin-left: 40px;
+    width:          58%;
+    font-family:    Noto Sans;
+    font-style:     normal;
+    font-weight:    normal;
+    font-size:      2rem;
+    color:        #8E73DF;
+    margin-bottom:  180px;
 }
 .ballsHolder{
-    padding-top: 5%;
-    width: 95%;
+    margin-top: 100px;
+    min-height: 45vh;
+    background-image: url("../img/background-full-parcerias.png");
+    background-size: cover;
+    background-origin: center;
+    background-position-y: -110%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    position: relative;
 }
 .balls{
+    border-radius: 100%;
+    box-shadow: 0px 0px 22px 10px #00000026;
+    width: 13em;
+    height: 13em;
+    background: #fff;
+
     display: flex;
     justify-content: center;
     align-content: center;
 }
+.ballsOrientation{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    top: -100px;
+    justify-content: space-around;
 
-.icon-about{
-    width: 50%;
-    box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 100% 100% 100% 100%;
+}
+.balls img{
+    width: 60%;
 }
 
-@media screen and (max-width:500px) {
+/* .icon-about{
+    width: 50%;
+    box-shadow: 0px 0px 22px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 100%;
+} */
+
+@media screen and (max-width:415px) {
     .about-message1{
-        font-size: 13px;
-        word-break: keep-all;
+        width: 90%;
+        font-size: 1.8rem;
+        margin-left: 0;
+
+    }
+    .about-message2{
+        font-size: 1rem;
+        width: 90%;
+        margin-bottom: 180px;
+        margin-left: 0;
     }
 
-    .about-message2{
-        word-break: keep-all;
-        padding-top: 6%;
-        font-size: 13px;
+    .ballsHolder{
+        height: 75vh;
+        background: #fff;
+    }
+    .balls{
+        height: 10rem;
+        width: 10rem;
+    }
+    .ballsOrientation{
+        flex-flow: column nowrap;
+        position: relative;
+        top:0;
+        align-items: center;
+        height: 75%;
+        background-image: url("../img/background-full-parcerias.png");
+    
+    }
+    .ballsOrientation .balls:first-child{
+        position: absolute;
+        top: -70px;
+    }
+    .ballsOrientation .balls:last-child{
+        position: absolute;
+        bottom: -70px;
     }
 }
