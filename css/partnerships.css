@@ -1,0 +1,100 @@
+.partnerships{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-family: var(--Noto-Sans);
+    min-height: 65vh;
+    align-items: center;
+    background-image:url("../img/background-img/background-parcerias.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-origin: center;
+}
+
+h2{
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 40px;
+}
+
+.layer-gradient{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* z-index: -1; */
+    min-height: 65vh;
+    background: linear-gradient(90deg, #7FB8C4 0%, rgba(127, 184, 196, 0.49) 0.01%, rgba(142, 171, 221, 0.31) 48.44%, rgba(162, 155, 254, 0.4) 100%);
+}
+
+.partnerships-img{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.partnerships-brands{
+    margin: 0 50px;
+}
+
+
+
+@media screen and (max-width:500px){
+     .partnerships{
+         min-height: 100vh;
+     }
+
+     .partnerships-brands{
+         margin: 20px 0;
+     }
+
+     .partnerships-img .partnerships-brands:nth-child(1){
+        margin-top: 35px;
+     }
+
+     .partnerships-img .partnerships-brands:nth-child(1) img{
+        width: 86px;
+        height: 79px;
+     }
+
+     .partnerships-img .partnerships-brands:nth-child(2) img{
+        width: 67.88px;
+        height: 78.72px;
+     }
+
+     .partnerships-img .partnerships-brands:nth-child(3) img{
+        width: 141.06px;
+        height: 77.21px;
+     }
+
+     .partnerships-img .partnerships-brands:nth-child(4) img{
+        width: 205.57px;
+        height: 49.65px;
+     }
+
+
+    .partnerships-img{
+        flex-flow: column nowrap;
+        height: auto;
+    }
+
+}
+
+
+
+
+
+
+
+
