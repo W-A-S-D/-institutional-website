@@ -51,7 +51,8 @@
 
 .ideal-desc p {
     max-width: 350px;
-    text-align: justify;
+    text-align: left;
+    text-justify: distribute;
     color: #A29BFE;
     font-size: 1.5rem;
     font-family: var(--Noto-Sans);
