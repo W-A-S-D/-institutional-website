@@ -10,6 +10,7 @@
 }
 
 .about-us h2 {
+    font-family: var(--Noto-Sans);
     color: #8E73DF;
     font-size: 2.5rem;
     text-align: center;

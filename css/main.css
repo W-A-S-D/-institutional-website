@@ -56,6 +56,8 @@ ul {
 }
 
 #menu {
+    font-family: var(--Noto-Sans);
+    font-weight: 700;
     display   : flex;
     list-style: none;
     gap       : 0.6rem;

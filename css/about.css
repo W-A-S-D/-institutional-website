@@ -9,9 +9,9 @@
 .about-message1{
     margin-top: 7.5%;
     margin-left: 40px;
-    font-family: Righteous;
+    font-family: var(--Noto-Sans);
     font-style: normal;
-    font-weight: normal;
+    font-weight: 700;
     font-size: 2.5rem;
     color: #8E73DF;
 }
@@ -20,7 +20,7 @@
     padding-top:    3rem;
     margin-left: 40px;
     width:          58%;
-    font-family:    Noto Sans;
+    font-family:    var(--Noto-Sans);
     font-style:     normal;
     font-weight:    normal;
     font-size:      2rem;
