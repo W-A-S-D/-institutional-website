@@ -23,3 +23,27 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+
+let arrowBox = document.getElementsByClassName('arrow-box')[0];
+
+const userActivity = () => {
+    idleTime++;
+    if (idleTime >= 5) {
+        arrowBox.classList.add('bounce');
+    }
+}
+
+let idleTime = setInterval(userActivity, 2500);
+
+
+
+const userActive = () => {
+    idleTime = 0;
+    clearInterval(idleTime);
+    if (arrowBox.classList.contains('bounce')) {
+        arrowBox.classList.remove('bounce');
+    }
+}
+
+window.onmousemove = userActive;
