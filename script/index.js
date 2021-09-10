@@ -36,8 +36,6 @@ const userActivity = () => {
 
 let idleTime = setInterval(userActivity, 2500);
 
-
-
 const userActive = () => {
     idleTime = 0;
     clearInterval(idleTime);
@@ -45,5 +43,10 @@ const userActive = () => {
         arrowBox.classList.remove('bounce');
     }
 }
+
+
+arrowBox.addEventListener('click', function() {
+    window.scrollTo(document.getElementById('about_product').offsetLeft, document.getElementById('about_product').offsetTop);
+})
 
 window.onmousemove = userActive;
