@@ -27,11 +27,9 @@ body::-webkit-scrollbar-thumb {
     scroll-behavior: smooth;
 }
 
-body,
 ul {
     margin: 0;
     padding: 0;
-    font-family: 'Righteous';
 }
 
 .header {
@@ -54,9 +52,11 @@ ul {
     font-size: 2.1rem;
     letter-spacing: .12rem;
     color: #FFF;
+    font-family: 'Righteous' !important;
 }
 
 #menu {
+    padding: 4rem 0 3rem 0;
     font-family: var(--Noto-Sans);
     font-weight: 700;
     display   : flex;
@@ -76,8 +76,8 @@ ul {
 }
 
 a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none !important;
 }
 
 a:hover {
@@ -86,6 +86,32 @@ a:hover {
 
 #btn-mobile {
     display: none;
+}
+
+#form {
+    padding-top: 6% !important;
+    padding-bottom: 6% !important;
+    color: #8E73DF;
+    font-size:      1.5rem;
+}
+
+#form h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#form button {
+    background-color: #8E73DF !important;
+    border-color: transparent !important;
+    width: 200px !important;
+}
+
+#form input {
+    border-color: #8E73DF;
+}
+
+#form textarea {
+    border-color: #8E73DF;
 }
 
 @media (max-width: 992px) {
