@@ -49,4 +49,22 @@ arrowBox.addEventListener('click', function() {
     window.scrollTo(document.getElementById('about_product').offsetLeft, document.getElementById('about_product').offsetTop);
 })
 
+
+const sendEmail = () => {
+    const userEmail = document.getElementById('emailFromUser').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    fetch('https://wasd-mailer.herokuapp.com/wasdenterprise6@gmail.com', {
+        method: 'POST',
+        body: JSON.stringify({
+            text_assunto: subject,
+            text_descricao: message,
+            emailFromUser: userEmail
+        })
+    }).then((res) => {
+        console.log(res);
+    });
+}
+
 window.onmousemove = userActive;
